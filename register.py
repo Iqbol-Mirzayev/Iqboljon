@@ -8,7 +8,7 @@ class Register:
     def update_login(self):
         pass
     def update_password(self):
-        pass
+        print("asdas")
 
 
 print("Maaaaa")
