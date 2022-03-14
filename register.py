@@ -10,3 +10,5 @@ class Register:
     def update_password(self):
         pass
 
+
+print("Maaaaa")
