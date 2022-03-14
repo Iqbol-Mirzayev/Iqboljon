@@ -1,2 +1,2 @@
-login=iqbol
-parol=12345
+iqbol
+12345
