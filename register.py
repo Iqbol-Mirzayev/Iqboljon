@@ -46,4 +46,5 @@ with open("a1.txt") as file:
         print("Login and password Changed succsesfully!")
     elif new == "n":
         os.system(exit())
+        print("bye")
 
