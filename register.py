@@ -2,7 +2,7 @@ class Register:
     def __init__(self):
         print("hello world")
     def login(self):
-        print("hello world")
+        print("salom")
     def password(self):
         pass
     def update_login(self):
