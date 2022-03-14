@@ -1,0 +1,2 @@
+login=iqbol
+parol=12345
