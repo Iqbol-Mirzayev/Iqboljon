@@ -1,6 +1,6 @@
 class Register:
     def __init__(self):
-        pass
+        print("hello world")
     def login(self):
         pass
     def password(self):
