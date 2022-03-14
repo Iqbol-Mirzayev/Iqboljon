@@ -9,10 +9,21 @@ with open("a1.txt") as file:
 
 
     while newlog != login or newpass != password:
-        os.system("clear")
+        os.system("cls")
         print("Login or password is wrong. Try again")
         newlog = input("Enter your login :  ").lower().strip()
         newpass = input("Enter your password :  ").lower().strip()
-        os.system("clear")
-    os.system("clear")
+        os.system("cls")
+    os.system("cls")
     print("Welcome to your account!")
+
+    new = input("Do you wish your update login or password [y/n]?").lower().strip()
+
+    while new != "y" and "n":
+        os.system("cls")
+        print("wrong!")
+        new = input("Do you wish your update login or password [y/n]?").lower().strip()
+
+    os.system("cls")
+    
+
