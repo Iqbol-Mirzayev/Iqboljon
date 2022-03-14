@@ -25,5 +25,25 @@ with open("a1.txt") as file:
         new = input("Do you wish your update login or password [y/n]?").lower().strip()
 
     os.system("cls")
-    
+    if new == 'y':
+        newlogin = input("Enter your new login!: ").lower().strip()
+        newll = input("Confirm your new login!: ").lower().strip()
+        while newll != newlogin:
+            os.system('cls')
+            print("Logins are not the same!")
+            newlogin = input("Enter your new login! ").lower().strip()
+            newll = input("Confirm your new login!: ").lower().strip()
+            os.system('cls')
+        newpassword = input("Enter your new password: ")
+        newp1 = input("Confirm your new password: ")
+        os.system('cls')
+        while newpassword != newp1:
+            print("Your passwords aren't the same!")
+            newpassword = input("Enter your new password: ")
+            newp1 = input("Confirm your new password: ")
+            os.system('cls')
+
+        print("Login and password Changed succsesfully!")
+    elif new == "n":
+        os.system(exit())
 
