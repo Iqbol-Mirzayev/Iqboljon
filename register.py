@@ -19,7 +19,7 @@ with open("a1.txt") as file:
 
     new = input("Do you wish your update login or password [y/n]?").lower().strip()
 
-    while new != "y" and "n":
+    while new != "y" and new != "n":
         os.system("cls")
         print("wrong!")
         new = input("Do you wish your update login or password [y/n]?").lower().strip()
@@ -27,13 +27,7 @@ with open("a1.txt") as file:
     os.system("cls")
     if new == 'y':
         newlogin = input("Enter your new login!: ").lower().strip()
-        newll = input("Confirm your new login!: ").lower().strip()
-        while newll != newlogin:
-            os.system('cls')
-            print("Logins are not the same!")
-            newlogin = input("Enter your new login! ").lower().strip()
-            newll = input("Confirm your new login!: ").lower().strip()
-            os.system('cls')
+        os.system('cls')
         newpassword = input("Enter your new password: ")
         newp1 = input("Confirm your new password: ")
         os.system('cls')
@@ -42,9 +36,14 @@ with open("a1.txt") as file:
             newpassword = input("Enter your new password: ")
             newp1 = input("Confirm your new password: ")
             os.system('cls')
+        with open('a1.txt', 'w') as fayl:
+            fayl.write(newlogin)
+            fayl.write('\n')
+            fayl.write(newp1)
 
         print("Login and password Changed succsesfully!")
-    elif new == "n":
-        os.system(exit())
+    else:
         print("bye")
+
+
 
